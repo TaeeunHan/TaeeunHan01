@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=546f33f797df916bcc5e25e6f61256bb"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/92b448243b.js" crossorigin="anonymous"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/location.js"></script>
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="inner">
+            <h1>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="회사 로고 이미지">
+                </a>
+            </h1>
+
+            <nav class="menuWeb">
+                <ul id="gnb">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="youtube.html">YOUTUBE</a></li>
+                    <li><a href="community.html">COMMUNITY</a></li>
+                    <li><a href="location.html">LOCATION</a></li>
+                </ul>
+
+                <ul class="util">
+                    <li><a href="join.html">JOIN</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="#">HELP</a></li>
+                    <li><a href="#">SITEMAP</a></li>
+                </ul>
+            </nav>
+
+            <a href="#" class="btnCall">
+                <span>메뉴호출</span>
+            </a>
+
+            <nav class="menuMo">
+                <h1>
+                    <a href="#">
+                        <img src="img/logo.png" alt="회사 로고 이미지">
+                    </a>
+                    <!-- <span>UI/UX DEVELOPMENT INSTITUTE</span> -->
+                </h1>
+
+                <ul id="gnbMo">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">CONCERT & TICKET</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">YOUTUBE</a></li>
+                    <li><a href="#">COMMUNITY</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="content location">
+        <div class="sub_visual"></div>
+        <div class="inner">
+            <h1>LOCATION <span>찾아오시는길</span></h1>
+            <div id="map"></div>
+
+            <ul class="traffic">
+                <li><a href="#">교통정보 보기</a></li>
+                <li class="on"><a href="#">교통정보 끄기</a></li>
+            </ul>
+
+            <ul class="branch">
+                <li class="on" data-index="0"><a href="#">본점</a></li>
+                <li data-index="1"><a href="#">지점1</a></li>
+                <li data-index="2"><a href="#">지점2</a></li>
+            </ul>
+        </div>
+
+    </section>
+
+    <footer id="footer">
+        <div class="inner">
+            <h1>Berliner Philharmoniker</h1>
+            <ul>
+                <li>
+                    <a href="#">Policy</a>
+                </li>
+                <li>
+                    <a href="#">Terms</a>
+                </li>
+                <li>
+                    <a href="#">Customer</a>
+                </li>
+                <li>
+                    <a href="#">Contact us</a>
+                </li>
+            </ul>
+
+            <address>
+                address : Philharmonie Berlin
+                <br>
+                Herbert-von-Karajan-Str. 1, 10785 Berlin, GERMANY
+                <br />
+                Tel : +49 30 254 88-0
+            </address>
+
+            <p>
+                Copyright &copy; 2022 Berliner Philharmoniker ALL Right reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

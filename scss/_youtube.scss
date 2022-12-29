@@ -1,0 +1,82 @@
+.youtube{
+	.sub_visual {
+		background: url(../img/youtube_sub_visual.jpg) no-repeat center/cover;
+	}
+
+	.inner{
+		.vidList{
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-content: flex-start;
+		
+			article{
+				width: 48%;
+				height: 400px;
+				box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.3);
+				margin-bottom: 40px;
+		
+				.pic{
+					display: block;
+					width: 100%;
+					height: 60%;
+					padding: 10px;
+		
+					img{
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+		
+				.con{
+					width: 100%;
+					height: 40%;
+					padding: 20px;
+		
+					h2{
+						font: 22px/1.2 "Montserrat";
+						color: #fff;
+						margin-bottom: 15px;
+						letter-spacing: 1px;
+					}
+		
+					p{
+						font: 14px/1.4 "Montserrat";
+						color: #ddd;
+						margin-bottom: 20px;
+					}
+		
+					span{
+						font: 12px/1 "Montserrat";
+						color: orange;
+						letter-spacing: 1px;
+					}
+				}
+			}
+		
+			figure.pop{
+				width: 100%;
+				height: 100vh;
+				position: fixed;
+				top: 0;
+				left: 0;
+				background: rgba(0, 0, 0, 0.8);
+				overflow: hidden;
+				padding: 5vw;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+		
+				.btnClose{
+					position: absolute;
+					top: 50px;
+					right: 50px;
+					color: #fff;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}

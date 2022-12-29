@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="validation.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="inner">
+            <h1>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="회사 로고 이미지">
+                </a>
+            </h1>
+
+            <nav class="menuWeb">
+                <ul id="gnb">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="youtube.html">YOUTUBE</a></li>
+                    <li><a href="community.html">COMMUNITY</a></li>
+                    <li><a href="location.html">LOCATION</a></li>
+                </ul>
+
+                <ul class="util">
+                    <li><a href="join.html">JOIN</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="#">HELP</a></li>
+                    <li><a href="#">SITEMAP</a></li>
+                </ul>
+            </nav>
+
+            <a href="#" class="btnCall">
+                <span>메뉴호출</span>
+            </a>
+
+            <nav class="menuMo">
+                <h1>
+                    <a href="#">
+                        <img src="img/logo.png" alt="회사 로고 이미지">
+                    </a>
+                    <!-- <span>UI/UX DEVELOPMENT INSTITUTE</span> -->
+                </h1>
+
+                <ul id="gnbMo">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">CONCERT & TICKET</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">YOUTUBE</a></li>
+                    <li><a href="#">COMMUNITY</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="content join">
+        <div class="sub_visual"></div>
+
+        <section class="join">
+            <div class="inner">
+                <h1>MEMBERSHIP</h1>
+
+                <form action="join_result.html" method="get" id="member">
+                    <fieldset>
+                        <legend class="h">회원가입 폼 입력 양식 </legend>
+
+                        <table>
+                            <caption class="h">회원가입을 위한 아이디, 비밀번호, 이메일,성별,학력,취미, 남기는 말 입력 테이블</caption>
+
+                            <tbody>
+                                <!-- userid   -->
+                                <tr>
+                                    <th scope="row"><label for="userid">User ID</label></th>
+                                    <td>
+                                        <input type="text" name="userid" id="userid" placeholder="아이디를 입력하세요.">
+                                    </td>
+                                </tr>
+                                <!-- password -->
+                                <tr>
+                                    <th scope="row"><label for="pwd1">Password</label></th>
+                                    <td>
+                                        <input type="password" name="pwd1" id="pwd1" placeholder="비밀번호를 입력하세요.">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="pwd2">Re Password</label></th>
+                                    <td>
+                                        <input type="password" name="pwd2" id="pwd2" placeholder="비밀번호를 재입력하세요.">
+                                    </td>
+                                </tr>
+                                <!-- email -->
+                                <tr>
+                                    <th scope="row"><label for="email">E-mail</label></th>
+                                    <td>
+                                        <input type="text" name="email" id="email" placeholder="이메일주소를 입력하세요.">
+                                    </td>
+                                </tr>
+                                <!-- education -->
+                                <tr>
+                                    <th scope="row"><label for="edu">Occupation</label></th>
+                                    <td>
+                                        <select name="edu" id="edu">
+                                            <option value="">선택하세요</option>
+                                            <option value="elementary school">Kids</option>
+                                            <option value="middle school">Students</option>
+                                            <option value="high school">Professionals</option>
+                                            <option value="college">Orchestra Members</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <!-- gender -->
+                                <tr>
+                                    <th scope="row">Gender</th>
+                                    <td>
+                                        <label for="male">Male</label>
+                                        <input type="radio" name="gender" id="male" value="male">
+                                        <label for="female">Female</label>
+                                        <input type="radio" name="gender" id="female" value="female">
+                                    </td>
+                                </tr>
+                                <!-- interest -->
+                                <tr>
+                                    <th scope="row">Interests</th>
+                                    <td>
+                                        <label for="sports">Orchestra</label>
+                                        <input type="checkbox" name="hobby" id="sports" value="sports">
+
+                                        <label for="music">Concert list</label>
+                                        <input type="checkbox" name="hobby" id="music" value="music">
+
+                                        <label for="game">Education Program</label>
+                                        <input type="checkbox" name="hobby" id="game" value="game">
+
+                                        <label for="reading">Gallery</label>
+                                        <input type="checkbox" name="hobby" id="reading" value="reading">
+                                    </td>
+                                </tr>
+                                <!-- comments -->
+                                <tr>
+                                    <th scope="row"><label for="comments">Comments</label></th>
+                                    <td>
+                                        <textarea name="comments" id="comments" placeholder="남기는 말을 입력하세요"></textarea>
+                                    </td>
+                                </tr>
+                                <!-- btns -->
+                                <tr>
+                                    <th colspan="2">
+                                        <input type="reset" value="cancel">
+                                        <input type="submit" value="submit">
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+
+    </section>
+
+    <footer id="footer">
+        <div class="inner">
+            <h1>Berliner Philharmoniker</h1>
+            <ul>
+                <li>
+                    <a href="#">Policy</a>
+                </li>
+                <li>
+                    <a href="#">Terms</a>
+                </li>
+                <li>
+                    <a href="#">Customer</a>
+                </li>
+                <li>
+                    <a href="#">Contact us</a>
+                </li>
+            </ul>
+
+            <address>
+                address : Philharmonie Berlin
+                <br>
+                Herbert-von-Karajan-Str. 1, 10785 Berlin, GERMANY
+                <br />
+                Tel : +49 30 254 88-0
+            </address>
+
+            <p>
+                Copyright &copy; 2022 Berliner Philharmoniker ALL Right reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
