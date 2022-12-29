@@ -14,19 +14,19 @@ const frame = document.querySelector('#visual .inner');
 const boxs = frame.querySelectorAll('article');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
-let enableClick = true;
+let SliderEnableClick = true;
 
 init();
 
 next.addEventListener('click', (e) => {
-	if (!enableClick) return;
-	enableClick = false;
+	if (!SliderEnableClick) return;
+	SliderEnableClick = false;
 	nextSlide(e);
 });
 
 prev.addEventListener('click', (e) => {
-	if (!enableClick) return;
-	enableClick = false;
+	if (!SliderEnableClick) return;
+	SliderEnableClick = false;
 	prevSlide(e);
 });
 function init() {
@@ -38,21 +38,21 @@ function init() {
 function nextSlide(e) {
 	e.preventDefault();
 	frame.append(frame.firstElementChild);
-	activation();
+	activation1();
 }
 
 function prevSlide(e) {
 	e.preventDefault();
 	frame.prepend(frame.lastElementChild);
-	activation();
+	activation1();
 }
 
-function activation() {
+function activation1() {
 	setTimeout(() => {
 		const boxs = frame.querySelectorAll('article');
 		for (const el of boxs) el.classList.remove('on');
 		boxs[2].classList.add('on');
-		enableClick = true;
+		SliderEnableClick = true;
 	}, 500);
 }
 
@@ -61,13 +61,14 @@ const main = document.querySelector('main');
 const btns = main.querySelectorAll('ul li');
 const tabBoxs = main.querySelectorAll('section article');
 let speed = convertSpeed(tabBoxs[0]);
+let TabEnableClick = true;
 
 btns.forEach((el, ind) => {
 	el.addEventListener('click', (e) => {
 		e.preventDefault();
 
-		if (enableClick) {
-			enableClick = false;
+		if (TabEnableClick) {
+			TabEnableClick = false;
 			activation(btns, ind);
 			activation(tabBoxs, ind);
 			new Anim(main, {
@@ -79,13 +80,12 @@ btns.forEach((el, ind) => {
 	});
 });
 
-//이 부분이 문제!
 function activation(arr, index) {
 	for (let tabBox of arr) tabBox.classList.remove('on');
 	arr[index].classList.add('on');
 
 	setTimeout(() => {
-		enableClick = true;
+		TabEnableClick = true;
 	}, speed);
 }
 
