@@ -1,58 +1,65 @@
-fieldset {border:none; }
-table{border-collapse:collapse; }
-.h{position:absolute; top:-9999px; opacity:0; }
+fieldset {
+	border: none;
+}
+table {
+	border-collapse: collapse;
+}
+.h {
+	position: absolute;
+	top: -9999px;
+	opacity: 0;
+}
 
+.content {
+	.sub_visual {
+		background: url(../img/join_sub_visual.jpg) no-repeat center/cover;
+	}
 
-.content{
-	.sub_visual{
-        background: url(../img/join_sub_visual.jpg) no-repeat center/cover;
-    }
-
-	.join{
+	.join {
 		width: 100%;
 		//padding: 150px 0;
 		//background-color: pink;
-	
-		.inner{
+
+		.inner {
 			width: 1180px;
 			margin: 0 auto;
 			//background-color: lightblue;
-	
-			h1{
-				font: normal 60px/1 "Montserrat";
+
+			h1 {
+				font: normal 60px/1 'Montserrat';
 				color: #ddd;
 				letter-spacing: 1px;
 				margin-bottom: 80px;
 				text-align: center;
 			}
-	
-			table{
+
+			table {
 				border-top: 2px solid #ddd;
 				border-bottom: 2px solid #ddd;
 				margin: 0 auto;
-	
+
 				th,
-				td{
+				td {
 					border-bottom: 1px solid #666;
 					padding: 15px 25px;
 				}
-	
-				th{
+
+				th {
 					width: 30%;
-					font: 16px/1 "Montserrat";
+					font: 16px/1 'Montserrat';
 					color: #ddd;
-	
-					input[type="reset"],
-					input[type="submit"]{
+
+					input[type='reset'],
+					input[type='submit'] {
 						width: 30%;
 						height: 50px;
 						border: 1px solid #333;
 						margin: 10px;
-						font: bold 14px/40px "Montserrat";
+						font: bold 14px/40px 'Montserrat';
 						color: #555;
 						cursor: pointer;
 						transition: 0.5s;
-	
+
 						&:hover {
 							background: #333;
 							color: #fff;
@@ -60,40 +67,41 @@ table{border-collapse:collapse; }
 						}
 					}
 				}
-				td{
+				td {
 					border-left: 1px solid #aaa;
 					width: 70%;
-					font: 14px/1 "Montserrat";
+					font: 14px/1 'Montserrat';
 					color: #ddd;
-	
-					input[type="text"],
-					input[type="password"],
 
-					select{
+					input[type='text'],
+					input[type='password'],
+					select {
 						width: 60%;
 						background-color: transparent;
 						padding: 10px;
 						border: 1px solid #aaa;
-						color: #777;
+						color: #333;
+						background-color: #ddd;
 					}
 
-					input[type="radio"],
-					input[type="checkbox"]{
+					input[type='radio'],
+					input[type='checkbox'] {
 						margin-right: 30px;
 					}
 
-					textarea{
+					textarea {
 						resize: none;
 						width: 60%;
 						height: 150px;
 						background: transparent;
 						padding: 10px;
 						border: 1px solid #aaa;
+						color: #ddd;
 					}
-	
+
 					//동적으로 생성될 에러 메시지 스타일
-					p{
-						font: 11px/1 "맑은 고딕";
+					p {
+						font: 11px/1 '맑은 고딕';
 						color: hotpink;
 						margin-top: 5px;
 					}
@@ -101,5 +109,4 @@ table{border-collapse:collapse; }
 			}
 		}
 	}
-	
 }
