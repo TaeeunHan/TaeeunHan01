@@ -1,68 +1,112 @@
-.location{
+.location {
 	width: 100%;
 
-	.sub_visual{
-			background: url(../img/location_sub_visual.jpg) no-repeat center/cover;
+	.sub_visual {
+		background: url(../img/location_sub_visual.jpg) no-repeat center/cover;
 	}
 
-	.inner{
-		#map{
+	.inner {
+		h1 {
+			font: bold 50px/1 'Montserrat';
+			letter-spacing: 2px;
+		}
+
+		.txtBox {
+			span {
+				font: bold 20px/1 'Montserrat';
+				color: #fff;
+			}
+
+			p {
+				font: 15px/1 'Montserrat';
+				color: #ddd;
+				margin-top: 15px;
+			}
+		}
+
+		fieldset {
+			border: none;
+
+			table {
+				border-collapse: collapse;
+				//border: 1px solid red;
+				//background-color: pink;
+				margin-top: 20px;
+
+				th {
+					padding: 15px 0px;
+					//background-color: pink;
+					text-align: left;
+					color: #ddd;
+				}
+
+				td {
+					input[type='text'] {
+						border: none;
+						border-bottom: 2px solid #ddd;
+						background-color: transparent;
+					}
+				}
+			}
+		}
+
+		#map {
 			width: 100%;
 			height: 500px;
 			border: 1px solid #ddd;
 			margin-bottom: 20px;
 		}
-	
-		&::after{
-			content: "";
+
+		&::after {
+			content: '';
 			display: block;
 			clear: both;
 		}
-	
-		.traffic{
+
+		.traffic {
 			float: left;
-	
-			li{
+
+			li {
 				float: left;
 				margin-right: 20px;
-	
-				a{
+
+				a {
 					display: block;
 					width: 200px;
 					height: 40px;
 					background: #555;
-					font: bold 12px/40px "맑은 고딕";
+					font: bold 12px/40px '맑은 고딕';
 					color: #fff;
 					text-align: center;
 					border: 1px solid #555;
 				}
-	
-				&.on a{
+
+				&.on a {
 					background: #fff;
 					color: #333;
 				}
 			}
 		}
-	
-		.branch{
+
+		.branch {
 			float: right;
-	
-			li{
+
+			li {
 				float: left;
 				margin-left: 10px;
-	
-				a{
+
+				a {
 					display: block;
 					width: 200px;
 					height: 40px;
 					background: #555;
-					font: bold 12px/40px "맑은 고딕";
+					font: bold 12px/40px '맑은 고딕';
 					color: #fff;
 					text-align: center;
 					border: 1px solid #555;
 				}
-	
-				&.on a{
+
+				&.on a {
 					background: #fff;
 					color: #333;
 				}
